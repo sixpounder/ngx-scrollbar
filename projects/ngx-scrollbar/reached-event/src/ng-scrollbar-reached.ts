@@ -68,10 +68,10 @@ abstract class ScrollReached implements OnDestroy {
     this.scrollReached().subscribe(_ =>
       Promise.resolve().then(() => this.zone.run(() => subscriber.next(_)))));
 
-  protected constructor(protected scrollbar: NgScrollbar, protected zone: NgZone) {
-    if (!scrollbar) {
-      throw new Error('[NgScrollbarReached Directive]: Host element must be an NgScrollbar component.');
-    }
+  protected constructor(@Optional() protected scrollbar: NgScrollbar, protected zone: NgZone) {
+    // if (!scrollbar) {
+    //   throw new Error('[NgScrollbarReached Directive]: Host element must be an NgScrollbar component.');
+    // }
   }
 
   ngOnDestroy() {
@@ -105,7 +105,9 @@ abstract class VerticalScrollReached extends ScrollReached implements OnInit {
   }
 
   ngOnInit() {
-    this.subscription = this.scrollbar.verticalScrolled.subscribe(this.scrollEvent);
+    if (this.scrollbar) {
+      this.subscription = this.scrollbar.verticalScrolled.subscribe(this.scrollEvent);
+    }
   }
 }
 
@@ -116,7 +118,9 @@ abstract class HorizontalScrollReached extends ScrollReached implements OnInit {
   }
 
   ngOnInit() {
-    this.subscription = this.scrollbar.horizontalScrolled.subscribe(this.scrollEvent);
+    if (this.scrollbar) {
+      this.subscription = this.scrollbar.horizontalScrolled.subscribe(this.scrollEvent);
+    }
   }
 }
 

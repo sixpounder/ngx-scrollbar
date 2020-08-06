@@ -1,18 +1,19 @@
 {
-  "name": "ngx-scrollbar",
-  "version": "7.2.3",
+  "name": "ngx-scrollbar-backport",
+  "version": "1.0.0",
   "license": "MIT",
-  "homepage": "https://ngx-scrollbar.netlify.com/",
+  "description": "A fork of ngx-scrollbar for IE11 backward compatibility",
+  "homepage": "http://github.com/sixpounder/ngx-scrollbar",
   "author": {
-    "name": "Murhaf Sousli",
-    "url": "http://github.com/murhafsousli"
+    "name": "Andrea Coronese",
+    "url": "http://github.com/sixpounder"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MurhafSousli/ngx-scrollbar"
+    "url": "http://github.com/sixpounder/ngx-scrollbar"
   },
   "bugs": {
-    "url": "http://github.com/murhafsousli/ngx-scrollbar/issues"
+    "url": "http://github.com/sixpounder/ngx-scrollbar/issues"
   },
   "keywords": [
     "scrollbar",
