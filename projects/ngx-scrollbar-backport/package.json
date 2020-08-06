@@ -1,6 +1,6 @@
 {
   "name": "ngx-scrollbar-backport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "A fork of ngx-scrollbar for IE11 backward compatibility",
   "homepage": "http://github.com/sixpounder/ngx-scrollbar",
