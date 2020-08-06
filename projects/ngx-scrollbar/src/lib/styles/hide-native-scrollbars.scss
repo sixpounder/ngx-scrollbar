@@ -1,3 +1,4 @@
+@import "../variables";
 @import "selectors";
 
 @mixin hide-scrollbar() {
@@ -16,6 +17,7 @@
   // Hide native horizontal scrollbar if visible
   @include scrollbarXUsed {
     @include nativeScrollbarHider {
+      bottom: $native-scrollbar-size;
       bottom: var(--native-scrollbar-size);
     }
   }
@@ -24,12 +26,14 @@
   @include scrollbarYUsed {
     @include nativeScrollbarHider {
       left: 0;
+      right: $native-scrollbar-size;
       right: var(--native-scrollbar-size);
     }
 
     @include rtl {
       @include nativeScrollbarHider {
         right: 0;
+        left: $native-scrollbar-size;
         left: var(--native-scrollbar-size);
       }
     }

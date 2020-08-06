@@ -1,3 +1,4 @@
+@import "../variables";
 @import "../styles/selectors";
 
 ::ng-deep {
@@ -23,6 +24,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: $scrollbar-track-transition;
       transition: var(--scrollbar-track-transition);
 
       // Hide scrollbar thumb when content is not scrollable
@@ -37,9 +39,12 @@
     height: 100%;
     width: 100%;
     z-index: 1;
+    border-radius: $scrollbar-border-radius;
     border-radius: var(--scrollbar-border-radius);
+    background-color: $scrollbar-track-color;
     background-color: var(--scrollbar-track-color);
     overflow: hidden;
+    transition: $scrollbar-track-transition;
     transition: var(--scrollbar-track-transition);
     cursor: default;
   }
@@ -49,8 +54,10 @@
     box-sizing: border-box;
     position: relative;
     border-radius: inherit;
+    background-color: $scrollbar-thumb-color;
     background-color: var(--scrollbar-thumb-color);
     transform: translateZ(0);
+    transition: $scrollbar-thumb-transition;
     transition: var(--scrollbar-thumb-transition);
   }
 

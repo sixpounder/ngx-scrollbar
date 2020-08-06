@@ -1,31 +1,9 @@
+@import "variables";
 @import "styles/hide-native-scrollbars";
 @import "styles/visibility";
 @import "styles/appearance";
 
 :host {
-  $scrollbar-border-radius: 7px;
-  $scrollbar-padding: 4px;
-  $scrollbar-track-color: transparent;
-  $scrollbar-thumb-color: rgba(0, 0, 0, 0.2);
-  $scrollbar-thumb-hover-color: $scrollbar-thumb-color;
-  $scrollbar-size: 5px;
-  $scrollbar-hover-size: $scrollbar-size;
-  $scrollbar-thumb-transition: height ease-out 150ms, width ease-out 150ms;
-  $scrollbar-track-transition: height ease-out 150ms, width ease-out 150ms;
-
-  $scrollbar-total-size: calc($scrollbar-size + ($scrollbar-padding * 2));
-
-  $vertical-scrollbar-size: $scrollbar-size;
-  $horizontal-scrollbar-size: $scrollbar-size;
-  $vertical-scrollbar-total-size: calc($vertical-scrollbar-size + $scrollbar-padding * 2);
-  $horizontal-scrollbar-total-size: calc($horizontal-scrollbar-size + $scrollbar-padding * 2);
-
-  $vertical-scrollbar-hover-size: $scrollbar-hover-size;
-  $vertical-scrollbar-hover-total-size: calc($vertical-scrollbar-size + $scrollbar-padding * 2);
-
-  $horizontal-scrollbar-hover-size: $scrollbar-hover-size;
-  $horizontal-scrollbar-hover-total-size: calc($horizontal-scrollbar-size + $scrollbar-padding * 2);
-
   // CSS variables used to customized the look of the scrollbar component
   --scrollbar-border-radius: $scrollbar-border-radius;
   --scrollbar-padding: $scrollbar-padding;

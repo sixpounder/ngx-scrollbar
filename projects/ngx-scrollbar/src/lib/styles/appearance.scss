@@ -3,6 +3,7 @@
 // Use push mixins with pointerEvents="scrollbar"
 
 @mixin pushLeft {
+  left: $scrollbar-total-size;
   left: var(--scrollbar-total-size);
   right: 0;
 }
@@ -10,33 +11,40 @@
 @mixin pushRight {
   left: 0;
   right: var(--scrollbar-total-size);
+  right: $scrollbar-total-size;
 }
 
 @mixin pushTop {
+  top: $scrollbar-total-size;
   top: var(--scrollbar-total-size);
   bottom: 0;
 }
 
 @mixin pushBottom {
   top: 0;
+  bottom: $scrollbar-total-size;
   bottom: var(--scrollbar-total-size);
 }
 
 // Use push mixins with pointerEvents="viewport"
 
 @mixin pushPaddingLeft {
+  padding-left: $scrollbar-total-size;
   padding-left: var(--scrollbar-total-size);
 }
 
 @mixin pushPaddingRight {
+  padding-right: $scrollbar-total-size;
   padding-right: var(--scrollbar-total-size);
 }
 
 @mixin pushPaddingTop {
+  padding-top: $scrollbar-total-size;
   padding-top: var(--scrollbar-total-size);
 }
 
 @mixin pushPaddingBottom {
+  padding-bottom: $scrollbar-total-size;
   padding-bottom: var(--scrollbar-total-size);
 }
 

@@ -1,21 +1,26 @@
 /**
  * Fit scrollbar is done when both scrollbar-control are visible, leaving a space in the corner to prevent intersection
  */
+@import "../variables";
 @import "selectors";
 
 @mixin fitTop {
+  top: $scrollbar-total-size;
   top: var(--scrollbar-total-size);
   bottom: 0;
 }
 @mixin fitBottom {
+  bottom: $scrollbar-total-size;
   bottom: var(--scrollbar-total-size);
   top: 0;
 }
 @mixin fitLeft {
+  left: $scrollbar-total-size;
   left: var(--scrollbar-total-size);
   right: 0;
 }
 @mixin fitRight {
+  right: $scrollbar-total-size;
   right: var(--scrollbar-total-size);
   left: 0;
 }

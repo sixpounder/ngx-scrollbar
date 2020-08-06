@@ -5,10 +5,13 @@
 ::ng-deep {
   .ng-scrollbar-wrapper {
     @include scrollbarY {
+      width: $vertical-scrollbar-total-size;
       width: var(--vertical-scrollbar-total-size);
 
       > .ng-scrollbar-track {
+        width: $vertical-scrollbar-size;
         width: var(--vertical-scrollbar-size);
+        height: calc(100% - #{$scrollbar-padding} * 2);
         height: calc(100% - var(--scrollbar-padding) * 2);
 
         > .ng-scrollbar-thumb {
@@ -20,8 +23,13 @@
 
     @include scrollbarYHovered {
       @include scrollbarY {
-        .ng-scrollbar-thumb {
-          background-color: var(--scrollbar-thumb-hover-color);
+        width: $vertical-scrollbar-hover-total-size !important;
+        > .ng-scrollbar-track {
+          width: $vertical-scrollbar-hover-size;
+          > .ng-scrollbar-thumb {
+            background-color: $scrollbar-thumb-hover-color;
+            background-color: var(--scrollbar-thumb-hover-color);
+          }
         }
       }
     }
