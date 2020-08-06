@@ -3,7 +3,7 @@ import { Directionality } from '@angular/cdk/bidi';
 import { RtlScrollAxisType } from '@angular/cdk/platform';
 import { Observable, Subject, Subscription, Subscriber } from 'rxjs';
 import { filter, map, tap, distinctUntilChanged } from 'rxjs/operators';
-import { NgScrollbar } from 'ngx-scrollbar';
+import { NgScrollbar } from 'ngx-scrollbar-backport';
 // Uncomment the following line in development mode
 // import { NgScrollbar } from '../../src/public-api';
 

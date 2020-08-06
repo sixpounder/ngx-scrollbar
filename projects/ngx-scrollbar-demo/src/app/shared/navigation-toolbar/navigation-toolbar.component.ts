@@ -2,7 +2,7 @@ import { Component, Input, ViewChild, AfterViewChecked, OnDestroy, NgZone, Chang
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs/operators';
 // import { NgScrollbar } from 'ngx-scrollbar';
-import { NgScrollbar } from '../../../../../ngx-scrollbar/src/public-api';
+import { NgScrollbar } from '../../../../../ngx-scrollbar-backport/src/public-api';
 
 @Component({
   selector: 'app-navigation-toolbar',

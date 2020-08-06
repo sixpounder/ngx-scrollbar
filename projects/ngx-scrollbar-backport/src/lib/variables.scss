@@ -17,7 +17,6 @@ $scrollbar-thumb-transition: height ease-out 150ms, width ease-out 150ms;
 $scrollbar-track-transition: height ease-out 150ms, width ease-out 150ms;
 
 $scrollbar-total-size: $scrollbar-size + $scrollbar-padding * 2;
-@debug $scrollbar-total-size;
 
 $vertical-scrollbar-size: $scrollbar-size;
 $horizontal-scrollbar-size: $scrollbar-size;

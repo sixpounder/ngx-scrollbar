@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BidiModule } from '@angular/cdk/bidi';
-import { NgScrollbarModule } from 'ngx-scrollbar';
+import { NgScrollbarModule } from 'ngx-scrollbar-backport';
 // Uncomment the following line in development mode
 // import { NgScrollbarModule } from '../../src/public-api';
 import {

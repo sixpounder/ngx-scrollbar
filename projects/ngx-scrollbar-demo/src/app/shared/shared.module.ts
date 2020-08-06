@@ -21,8 +21,8 @@ import { NavigationToolbarComponent } from './navigation-toolbar/navigation-tool
 import { LogoComponent } from './logo/logo.component';
 import { AuthorComponent } from './author/author.component';
 
-import { NgScrollbarModule } from '../../../../ngx-scrollbar/src/public-api';
-import { NgScrollbarReachedModule } from '../../../../ngx-scrollbar/reached-event/src/public_api';
+import { NgScrollbarModule } from '../../../../ngx-scrollbar-backport/src/public-api';
+import { NgScrollbarReachedModule } from '../../../../ngx-scrollbar-backport/reached-event/src/public_api';
 
 @NgModule({
   imports: [

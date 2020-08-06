@@ -22,10 +22,10 @@
     ],
     "paths": {
       "ngx-scrollbar": [
-        "dist/ngx-scrollbar"
+        "dist/ngx-scrollbar-backport"
       ],
       "ngx-scrollbar/*": [
-        "dist/ngx-scrollbar/*"
+        "dist/ngx-scrollbar-backport/*"
       ]
     }
   }

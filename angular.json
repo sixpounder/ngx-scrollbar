@@ -3,38 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-scrollbar": {
+    "ngx-scrollbar-backport": {
       "projectType": "library",
-      "root": "projects/ngx-scrollbar",
-      "sourceRoot": "projects/ngx-scrollbar/src",
+      "root": "projects/ngx-scrollbar-backport",
+      "sourceRoot": "projects/ngx-scrollbar-backport/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ngx-scrollbar/tsconfig.lib.json",
-            "project": "projects/ngx-scrollbar/ng-package.json"
+            "tsConfig": "projects/ngx-scrollbar-backport/tsconfig.lib.json",
+            "project": "projects/ngx-scrollbar-backport/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-scrollbar/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-scrollbar-backport/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-scrollbar/src/test.ts",
-            "tsConfig": "projects/ngx-scrollbar/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-scrollbar/karma.conf.js"
+            "main": "projects/ngx-scrollbar-backport/src/test.ts",
+            "tsConfig": "projects/ngx-scrollbar-backport/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-scrollbar-backport/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-scrollbar/tsconfig.lib.json",
-              "projects/ngx-scrollbar/tsconfig.spec.json"
+              "projects/ngx-scrollbar-backport/tsconfig.lib.json",
+              "projects/ngx-scrollbar-backport/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }

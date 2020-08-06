@@ -9,7 +9,7 @@ import {
   ScrollbarVisibility,
   ScrollbarPointerEventsMethod,
   NgScrollbar
-} from '../../../../ngx-scrollbar/src/public-api';
+} from '../../../../ngx-scrollbar-backport/src/public-api';
 // import {
 //   ScrollbarAppearance,
 //   ScrollbarTrack,
