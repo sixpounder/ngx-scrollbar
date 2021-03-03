@@ -10,8 +10,8 @@
 
 @mixin pushRight {
   left: 0;
-  right: var(--scrollbar-total-size);
   right: $scrollbar-total-size;
+  right: var(--scrollbar-total-size);
 }
 
 @mixin pushTop {

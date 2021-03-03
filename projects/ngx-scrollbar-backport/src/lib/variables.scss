@@ -20,13 +20,13 @@ $scrollbar-total-size: $scrollbar-size + $scrollbar-padding * 2;
 
 $vertical-scrollbar-size: $scrollbar-size;
 $horizontal-scrollbar-size: $scrollbar-size;
-$vertical-scrollbar-total-size: calc($vertical-scrollbar-size + $scrollbar-padding * 2);
-$horizontal-scrollbar-total-size: calc($horizontal-scrollbar-size + $scrollbar-padding * 2);
+$vertical-scrollbar-total-size: $vertical-scrollbar-size + $scrollbar-padding * 2;
+$horizontal-scrollbar-total-size: $horizontal-scrollbar-size + $scrollbar-padding * 2;
 
 $vertical-scrollbar-hover-size: $scrollbar-hover-size;
-$vertical-scrollbar-hover-total-size: calc($vertical-scrollbar-size + $scrollbar-padding * 2);
+$vertical-scrollbar-hover-total-size: $vertical-scrollbar-size + $scrollbar-padding * 2;
 
 $horizontal-scrollbar-hover-size: $scrollbar-hover-size;
-$horizontal-scrollbar-hover-total-size: calc($horizontal-scrollbar-size + $scrollbar-padding * 2);
+$horizontal-scrollbar-hover-total-size: $horizontal-scrollbar-size + $scrollbar-padding * 2;
 
 $native-scrollbar-size: 13px;

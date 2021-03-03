@@ -11,7 +11,7 @@
       > .ng-scrollbar-track {
         width: $vertical-scrollbar-size;
         width: var(--vertical-scrollbar-size);
-        height: calc(100% - #{$scrollbar-padding} * 2);
+        height: calc(100% - $scrollbar-padding * 2);
         height: calc(100% - var(--scrollbar-padding) * 2);
 
         > .ng-scrollbar-thumb {
@@ -21,9 +21,9 @@
       }
     }
 
-    @include scrollbarYHovered {
+/*     @include scrollbarYHovered {
       @include scrollbarY {
-        width: $vertical-scrollbar-hover-total-size !important;
+        width: $vertical-scrollbar-hover-total-size;
         > .ng-scrollbar-track {
           width: $vertical-scrollbar-hover-size;
           > .ng-scrollbar-thumb {
@@ -32,7 +32,7 @@
           }
         }
       }
-    }
+    } */
 
     @include enabled {
       @include setScrollbarYPosition;
