@@ -16,17 +16,17 @@ $scrollbar-hover-size: $scrollbar-size;
 $scrollbar-thumb-transition: height ease-out 150ms, width ease-out 150ms;
 $scrollbar-track-transition: height ease-out 150ms, width ease-out 150ms;
 
-$scrollbar-total-size: $scrollbar-size + $scrollbar-padding * 2;
+$scrollbar-total-size: #{strip-unit($scrollbar-size) + strip-unit($scrollbar-padding) * 2}px;
 
 $vertical-scrollbar-size: $scrollbar-size;
 $horizontal-scrollbar-size: $scrollbar-size;
-$vertical-scrollbar-total-size: $vertical-scrollbar-size + $scrollbar-padding * 2;
-$horizontal-scrollbar-total-size: $horizontal-scrollbar-size + $scrollbar-padding * 2;
+$vertical-scrollbar-total-size: #{strip-unit($vertical-scrollbar-size) + strip-unit($scrollbar-padding) * 2}px;
+$horizontal-scrollbar-total-size: #{strip-unit($horizontal-scrollbar-size) + strip-unit($scrollbar-padding) * 2}px;
 
 $vertical-scrollbar-hover-size: $scrollbar-hover-size;
-$vertical-scrollbar-hover-total-size: $vertical-scrollbar-size + $scrollbar-padding * 2;
+$vertical-scrollbar-hover-total-size: #{strip-unit($vertical-scrollbar-hover-size) + strip-unit($scrollbar-padding) * 2}px;
 
 $horizontal-scrollbar-hover-size: $scrollbar-hover-size;
-$horizontal-scrollbar-hover-total-size: $horizontal-scrollbar-size + $scrollbar-padding * 2;
+$horizontal-scrollbar-hover-total-size: #{strip-unit($horizontal-scrollbar-hover-size) + strip-unit($scrollbar-padding) * 2}px;
 
 $native-scrollbar-size: 13px;

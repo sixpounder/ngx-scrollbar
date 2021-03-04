@@ -5,15 +5,15 @@
 
 :host {
   // CSS variables used to customized the look of the scrollbar component
-  --scrollbar-border-radius: $scrollbar-border-radius;
-  --scrollbar-padding: 10px;
-  --scrollbar-track-color: $scrollbar-track-color;
-  --scrollbar-thumb-color: $scrollbar-thumb-color;
-  --scrollbar-thumb-hover-color: $scrollbar-thumb-hover-color;
-  --scrollbar-size: 20px;
-  --scrollbar-hover-size: $scrollbar-hover-size;
-  --scrollbar-thumb-transition: $scrollbar-thumb-transition;
-  --scrollbar-track-transition: $scrollbar-track-transition;
+  --scrollbar-border-radius: #{$scrollbar-border-radius};
+  --scrollbar-padding: #{$scrollbar-padding};
+  --scrollbar-track-color: #{$scrollbar-track-color};
+  --scrollbar-thumb-color: #{$scrollbar-thumb-color};
+  --scrollbar-thumb-hover-color: #{$scrollbar-thumb-hover-color};
+  --scrollbar-size: #{$scrollbar-size};
+  --scrollbar-hover-size: #{$scrollbar-hover-size};
+  --scrollbar-thumb-transition: #{$scrollbar-thumb-transition};
+  --scrollbar-track-transition: #{$scrollbar-track-transition};
 
   display: block;
   position: relative;

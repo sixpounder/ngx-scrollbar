@@ -21,18 +21,20 @@
       }
     }
 
-/*     @include scrollbarYHovered {
+    @include scrollbarYHovered {
       @include scrollbarY {
         width: $vertical-scrollbar-hover-total-size;
+        width: var(--vertical-scrollbar-total-size);
         > .ng-scrollbar-track {
           width: $vertical-scrollbar-hover-size;
+          width: var(--vertical-scrollbar-size);
           > .ng-scrollbar-thumb {
             background-color: $scrollbar-thumb-hover-color;
             background-color: var(--scrollbar-thumb-hover-color);
           }
         }
       }
-    } */
+    }
 
     @include enabled {
       @include setScrollbarYPosition;
