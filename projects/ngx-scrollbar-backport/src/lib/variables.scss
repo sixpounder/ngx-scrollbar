@@ -11,7 +11,7 @@ $scrollbar-padding: 4px;
 $scrollbar-track-color: transparent;
 $scrollbar-thumb-color: rgba(0, 0, 0, 0.2);
 $scrollbar-thumb-hover-color: $scrollbar-thumb-color;
-$scrollbar-size: 5px;
+$scrollbar-size: 10px;
 $scrollbar-hover-size: $scrollbar-size;
 $scrollbar-thumb-transition: height ease-out 150ms, width ease-out 150ms;
 $scrollbar-track-transition: height ease-out 150ms, width ease-out 150ms;
@@ -29,4 +29,4 @@ $vertical-scrollbar-hover-total-size: #{strip-unit($vertical-scrollbar-hover-siz
 $horizontal-scrollbar-hover-size: $scrollbar-hover-size;
 $horizontal-scrollbar-hover-total-size: #{strip-unit($horizontal-scrollbar-hover-size) + strip-unit($scrollbar-padding) * 2}px;
 
-$native-scrollbar-size: 13px;
+$native-scrollbar-size: 18px;

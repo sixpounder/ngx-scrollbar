@@ -26,14 +26,14 @@
   @include scrollbarYUsed {
     @include nativeScrollbarHider {
       left: 0;
-      right: $native-scrollbar-size;
+      right: 0;
       right: var(--native-scrollbar-size);
     }
 
     @include rtl {
       @include nativeScrollbarHider {
         right: 0;
-        left: $native-scrollbar-size;
+        left: 0;
         left: var(--native-scrollbar-size);
       }
     }
